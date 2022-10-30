@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Калькулятор стоимости</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Расчет кредита</a> 
+                </li>
+                <li class="choice">
+                    <span>Расчет вклада</span>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="calc-window">
+                <div class="calc-wrep">
+                    <div class="wrep credit-amount">
+                        <span>Сумма вклада, &#8381</span>
+                        <input id="ticketNum" type="number" name="number" placeholder="0,00 &#8381" value="" class="summ">
+                    </div>
+                    <div class="wrep credit-percent">
+                        <span>Процентная ставка, %</span>
+                        <input autocomplete="on" type="number" name="percent" placeholder="0,00 %" value="" class="percent">
+                    </div>
+                    <div class="wrep credit-term">
+                        <span>Срок вклада, год</span>
+                        <input autocomplete="on" type="number" name="term" placeholder="Кол-во лет" value="" class="term">
+                    </div>
+                    <div class="wrep capitalization">
+                        <span>Частота капитализации</span>
+                        <input autocomplete="on" type="number" name="capitalization" placeholder="Кол-во раз" value="" class="freq">
+                    </div>
+
+                    <div>
+                        <button class="calc">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+            <div id="calc-result">
+                <div class="all-payment">
+                    <span class="all">Итоговая сумма на счету</span>
+                    <span class="res-summ">0 &#8381</span>
+                </div>
+                <div class="overpay">
+                    <span class="all">Выгода</span>
+                    <span class="res-over">0 &#8381</span>
+                </div>
+            </div>
+        </section>
+        <script src="script1.js" ></script>
+    </body>
+</html>

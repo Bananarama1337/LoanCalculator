@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Калькулятор стоимости</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link type="text/css" rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li class="choice">
+                    <span>Расчет кредита</span> 
+                </li>
+                <li>
+                    <a href="index1.html">Расчет вклада</a>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div id="calc-window">
+                <div class="calc-wrep">
+                    <div class="wrep credit-amount">
+                        <span>Сумма займа, &#8381</span>
+                        <input id="ticketNum" type="number" name="number" placeholder="0,00 &#8381" value="" min="100" max="10000000" class="summ" required>
+                    </div>
+                    <div class="wrep credit-percent">
+                        <span>Процентная ставка, %</span>
+                        <input autocomplete="on" type="number" name="percent" placeholder="0,00 %" value="" class="percent" required>
+                    </div>
+                    <div class="wrep credit-term">
+                        <span>Срок кредита, год</span>
+                        <input autocomplete="on" type="number" name="term" placeholder="Кол-во лет" value="" class="term" required>
+                    </div>
+
+                    <div class="wrep credit-type">
+                        <span>Вариант платежа</span>
+                        <span></span>
+                        <select class="type" name="credit-option" id="credit-option">
+                            <option value="annuitet">Аннуитетный</option>
+                            <option value="differt">Дифференцированный</option>
+                        </select>
+                    </div>
+                    <div type="button">
+                        <button class="calc">Рассчитать</button>
+                    </div>
+                </div>
+            </div>
+            <div id="calc-result">
+                <div class="all-payment">
+                    <span class="all">Всего выплат</span>
+                    <span class="res-summ">0 &#8381</span>
+                </div>
+                <div class="overpay">
+                    <span class="all">Переплата</span>
+                    <span class="res-over">0 &#8381</span>
+                </div>
+            </div>
+        </section>
+        <script src="script.js" ></script>
+    </body>
+</html>
